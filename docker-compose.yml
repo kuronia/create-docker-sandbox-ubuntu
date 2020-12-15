@@ -1,0 +1,20 @@
+version: "3"
+services:
+  sandbox1:
+    hostname: sandbox1
+    build:
+      context: .
+      args:
+        - USER=${USER}
+        - PASS=${PASS}
+    command: /init.sh ${USER}
+    tty: true
+  sandbox2:
+    hostname: sandbox2
+    build:
+      context: .
+      args:
+        - USER=${USER}
+        - PASS=${PASS}
+    command: /init.sh ${USER}
+    tty: true
