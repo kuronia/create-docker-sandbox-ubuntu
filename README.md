@@ -47,7 +47,7 @@ cb8c84ae90b9   test_sandbox1   "/init.sh yourname"   7 seconds ago   Up 6 second
 
 docker inspect を実行しコンテナの IP を調べる。引数には上記の docker ps で出力された名前を使用する。
 
-- docker inspect test_sandbox_1
+- docker inspect test_sandbox1_1
 
 出力例:
 
